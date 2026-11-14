@@ -95,9 +95,29 @@
     <section class="brand-note"><p class="eyebrow">THE DE LUNE POINT OF VIEW</p><h2>Style is not about<br><em>more. It is about meaning.</em></h2><a href="about.html" class="underlined-link light-link">Get to know us <span>↗</span></a></section>
   </main>
   <footer class="site-footer">
+  <style>
+    .footer-social-links{display:flex;justify-content:center;align-items:center;gap:12px;margin:18px auto;flex-wrap:wrap}
+    .footer-social-button{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:42px;padding:10px 17px;border-radius:6px;color:#fff;text-decoration:none;font:600 14px/1 "DM Sans",sans-serif;transition:opacity .2s ease}
+    .footer-social-button:hover{opacity:.88}
+    .footer-social-button svg{width:19px;height:19px;display:block;flex:none}
+    .footer-social-facebook{background:#1877F2}
+    .footer-social-instagram{background:#833AB4}
+  </style>
+
     <a class="wordmark footer-wordmark" href="index.html" aria-label="DeLune home"><img src="logo.png" alt="DeLune" class="delune-logo"></a>
     <p>DeLune Bangladesh · Official DeLune Fashion</p>
     <div class="footer-links"><a href="about.html">About</a><a href="contact.html">Contact</a><a href="categories.html">Shop</a><a href="collections.html">Collections</a><a href="moderate.html">Moderator</a><a href="merchant.html">Merchant login</a><a href="fashion-platform.html">Fashion platform</a><a href="froyo-collaboration.html">Website by Froyo</a></div>
+    
+    <div class="footer-social-links" aria-label="DeLune social media">
+      <a class="footer-social-button footer-social-facebook" href="https://www.facebook.com/share/1A2CgrEu2m/" target="_blank" rel="noopener noreferrer" aria-label="Visit DeLune on Facebook">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M13.5 21v-8.2h2.8l.4-3.2h-3.2V7.5c0-.9.3-1.5 1.6-1.5h1.7V3.1c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3v2.3H7.3v3.2h2.8V21h3.4Z"/></svg>
+        <span>Facebook</span>
+      </a>
+      <a class="footer-social-button footer-social-instagram" href="https://www.instagram.com/the_delune_official?mdxt=MWV2aDN3d3podGI4cw==" target="_blank" rel="noopener noreferrer" aria-label="Visit DeLune on Instagram">
+        <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+        <span>Instagram</span>
+      </a>
+    </div>
     <small>© <span id="year"></span> DeLune. All rights reserved.</small>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
